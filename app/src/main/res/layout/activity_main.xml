@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <RadioGroup
+        android:id="@+id/iconChangeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/redRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/red"
+            app:buttonTint="@color/red"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/greenRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/green"
+            app:buttonTint="@color/green"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/purpleRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/purple"
+            app:buttonTint="@color/purple"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/orangeRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orange"
+            app:buttonTint="@color/orange"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
